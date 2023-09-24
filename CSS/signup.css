@@ -1,0 +1,147 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+#container {
+    position: relative;
+    background-image: url(img.gif);
+    height: 100vh;
+    width: 60vw;
+    text-align: center;
+    z-index: -1;
+}
+
+.Red {
+    color: #f2363c;
+    font-size: 3rem;
+    position: relative;
+    top: 12rem;
+    background-color: rgb(red, green, blue);
+}
+
+.copyright {
+    color: #f2363c;
+    position: relative;
+    top: 68rem;
+    left: 10rem;
+}
+
+#rightContainer {
+    background-color: #121418;
+    position: relative;
+    height: 100vh;
+    width: 70vw;
+}
+
+#formContainer {
+    position: relative;
+    height: 5rem;
+    top: 45rem;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+}
+
+#email {
+    color: #f2363c;
+}
+
+#user_email {
+    background-color: #22262C;
+    border-style: none;
+    border: 1px solid #f2363c;
+}
+
+#pw {
+    color: #f2363c;
+}
+
+#user_password {
+    background-color: #22262C;
+    border-style: none;
+    border: 1px solid #f2363c;
+}
+
+h1 {
+    color: #f2363c;
+    font-size: 3rem;
+    font-weight: 300;
+    position: relative;
+    top: 10rem;
+    text-align: center;
+}
+
+.textp {
+    color: #f2363c;
+    position: relative;
+    top: 12rem;
+    text-align: center;
+}
+
+#submit {
+    background-color: #22262C;
+    border-style: none;
+    color: #f2363c;
+    position: relative;
+}
+
+hr {
+    position: relative;
+    top: 40rem;
+    width: 45vw;
+    border-radius: 70%;
+    background-color: #f2363c;
+    color: #f2363c;
+}
+
+@media (max-width: 1151px) {
+    #submit {
+        top: 6rem;
+        right: 185px;
+    }
+    #pw {
+        display: flex;
+        margin-top: 1rem;
+        position: absolute;
+    }
+    #user_password {
+        float: right;
+        position: absolute;
+        left: 131px;
+        bottom: 25px;
+    }
+    #formContainer {
+        float: left;
+        padding: 0%;
+        width: auto;
+        position: relative;
+        display: flex;
+    }
+
+    .copyright {
+        position: absolute;
+        left: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+        margin: 0%;
+        background-color: #121418;
+    }
+    #container {
+        width: auto;
+        margin-bottom: 0%;
+    }
+    #rightContainer {
+        width: auto;
+        position: relative;
+        bottom: 35px;
+    }
+}
